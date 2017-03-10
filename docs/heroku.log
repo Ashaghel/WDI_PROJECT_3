@@ -1,0 +1,54 @@
+➜  WDI_PROJECT_3 git:(master) heroku logs
+2017-02-28T18:00:21.311792+00:00 app[api]: Enable Logplex by user christopherallanperry@yahoo.co.uk
+2017-02-28T18:00:19.711535+00:00 app[api]: Initial release by user christopherallanperry@yahoo.co.uk
+2017-02-28T18:00:19.711535+00:00 app[api]: Release v1 created by user christopherallanperry@yahoo.co.uk
+2017-02-28T18:00:22.197585+00:00 app[api]: Release v2 created by user christopherallanperry@yahoo.co.uk
+2017-02-28T18:00:21.311792+00:00 app[api]: Release v2 created by user christopherallanperry@yahoo.co.uk
+2017-03-02T12:24:05.288638+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=fierce-fortress-98221.herokuapp.com request_id=3aa98e97-cec6-48aa-bab0-4ba2fa77d9fa fwd="79.75.49.232" dyno= connect= service= status=502 bytes=
+2017-03-02T12:24:05.508766+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=fierce-fortress-98221.herokuapp.com request_id=5a08c05d-d9cd-4932-b00f-060b61158f44 fwd="79.75.49.232" dyno= connect= service= status=502 bytes=
+2017-03-08T21:03:12.000000+00:00 app[api]: Build started by user christopherallanperry@yahoo.co.uk
+2017-03-08T21:03:43.878537+00:00 app[api]: Release v3 created by user christopherallanperry@yahoo.co.uk
+2017-03-08T21:03:43.892261+00:00 app[api]: Scaled to web@1:Free by user christopherallanperry@yahoo.co.uk
+2017-03-08T21:03:43.878537+00:00 app[api]: Deploy 0c43c5c by user christopherallanperry@yahoo.co.uk
+2017-03-08T21:03:44.172260+00:00 app[api]: Release v3 created by user christopherallanperry@yahoo.co.uk
+2017-03-08T21:03:12.000000+00:00 app[api]: Build succeeded
+2017-03-08T21:03:47.254189+00:00 heroku[web.1]: Starting process with command `./node_modules/.bin/forever -m 5 index.js`
+2017-03-08T21:03:49.483203+00:00 app[web.1]: warn:    --minUptime not set. Defaulting to: 1000ms
+2017-03-08T21:03:49.484530+00:00 app[web.1]: warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+2017-03-08T21:03:50.074678+00:00 app[web.1]: Express has started on port: 45219
+2017-03-08T21:03:50.089613+00:00 app[web.1]:
+2017-03-08T21:03:50.089616+00:00 app[web.1]: /app/node_modules/mongodb/lib/server.js:228
+2017-03-08T21:03:50.089617+00:00 app[web.1]:         process.nextTick(function() { throw err; })
+2017-03-08T21:03:50.089618+00:00 app[web.1]:                                       ^
+2017-03-08T21:03:50.089618+00:00 app[web.1]: Error: connect ECONNREFUSED 127.0.0.1:27017
+2017-03-08T21:03:50.089619+00:00 app[web.1]:     at Object.exports._errnoException (util.js:1022:11)
+2017-03-08T21:03:50.089620+00:00 app[web.1]:     at exports._exceptionWithHostPort (util.js:1045:20)
+2017-03-08T21:03:50.089622+00:00 app[web.1]:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+2017-03-08T21:03:50.101068+00:00 app[web.1]: error: Forever detected script exited with code: 1
+2017-03-08T21:04:47.730765+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2017-03-08T21:04:47.730765+00:00 heroku[web.1]: Stopping process with SIGKILL
+2017-03-08T21:04:47.829333+00:00 heroku[web.1]: Process exited with status 137
+2017-03-08T21:04:47.856808+00:00 heroku[web.1]: State changed from starting to crashed
+2017-03-08T21:04:47.857856+00:00 heroku[web.1]: State changed from crashed to starting
+2017-03-08T21:04:50.443536+00:00 heroku[web.1]: Starting process with command `./node_modules/.bin/forever -m 5 index.js`
+2017-03-08T21:04:53.007585+00:00 app[web.1]: warn:    --minUptime not set. Defaulting to: 1000ms
+2017-03-08T21:04:53.009906+00:00 app[web.1]: warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+2017-03-08T21:04:53.891985+00:00 app[web.1]: Express has started on port: 45968
+2017-03-08T21:04:53.916963+00:00 app[web.1]:
+2017-03-08T21:04:53.916967+00:00 app[web.1]: /app/node_modules/mongodb/lib/server.js:228
+2017-03-08T21:04:53.916968+00:00 app[web.1]:         process.nextTick(function() { throw err; })
+2017-03-08T21:04:53.916969+00:00 app[web.1]:                                       ^
+2017-03-08T21:04:53.916969+00:00 app[web.1]: Error: connect ECONNREFUSED 127.0.0.1:27017
+2017-03-08T21:04:53.916970+00:00 app[web.1]:     at Object.exports._errnoException (util.js:1022:11)
+2017-03-08T21:04:53.916971+00:00 app[web.1]:     at exports._exceptionWithHostPort (util.js:1045:20)
+2017-03-08T21:04:53.916972+00:00 app[web.1]:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+2017-03-08T21:04:53.929171+00:00 app[web.1]: error: Forever detected script exited with code: 1
+2017-03-08T21:05:10.113859+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=fierce-fortress-98221.herokuapp.com request_id=980e5777-f902-4e22-9067-96d5d87ea125 fwd="86.159.77.214" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-08T21:05:16.265569+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=fierce-fortress-98221.herokuapp.com request_id=678138cc-49f2-4a71-9dab-29dbdfdb4d2b fwd="86.159.77.214" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-08T21:05:50.705324+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2017-03-08T21:05:50.705324+00:00 heroku[web.1]: Stopping process with SIGKILL
+2017-03-08T21:05:50.823410+00:00 heroku[web.1]: Process exited with status 137
+2017-03-08T21:05:50.856791+00:00 heroku[web.1]: State changed from starting to crashed
+2017-03-08T21:05:51.860461+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=fierce-fortress-98221.herokuapp.com request_id=a6b9380a-6248-4dcd-9dee-7612eedfc2ae fwd="86.159.77.214" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-08T21:05:51.774894+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=fierce-fortress-98221.herokuapp.com request_id=81bb8916-dbdc-4adb-9165-f841e399ade7 fwd="86.159.77.214" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-08T21:05:52.155960+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=fierce-fortress-98221.herokuapp.com request_id=3d57ceae-6dd5-4030-aa0d-725c41e2f5ac fwd="86.159.77.214" dyno= connect= service= status=503 bytes= protocol=https
