@@ -1,27 +1,51 @@
 # WDI_PROJECT_3
-Project 3 for WDI
+Case study of my third and group project for GA.
 
-##Initial Idea
+Create a MEAN app with user authentication and deploy it to Heroku while working in a team of 5.
 
-We started the project by brainstorming ideas at the pub and then the next day in a more formal manner. After discussing a few ideas we had ideas for a dating app, a news app and a books app. We later discussed our idea with Alex who pushed us to develop our idea and make it more interactive with the user, after which we decided to settle on a book-tracing app, where users can add a book to the website and then release it into the wild where other readers can pick up the book and comment further on the website about the book’s story and its journey. 
+<a href="https://github.com/EffingKay/WDI_PROJECT_3" target="_blank"><i class="fa fa-github portfolio-icon"></i></a> &nbsp; &nbsp; &nbsp;
+<a href="https://free-the-books.herokuapp.com" target="_blank"><i class="fa fa-link portfolio-icon"></i></a> &nbsp; &nbsp; &nbsp;
 
-For our project we used trello to organise our tasks between the five of us. For the start, Henry and James worked on setting up an authentication system. After setting up the authentication, we divided our tasks of building the app into front-end and back-end. The back-end group worked on setting up the express app and the angular set up. Meanwhile the other group worked on designing wireframes and then building the html pages for the users, index, home page, and add a book page. 
+## What was used
+
+AngularJS, SASS and Skeleton framework were used for client side styling, while Express and MongoDB were used on server side.
+
+Gulp was used as task runner.
+
+We used Google Books API.
+
+## Overview
+
+![screen shot 2017-03-04 at 18 48 38](https://cloud.githubusercontent.com/assets/20258758/23581420/3f8f1e96-010b-11e7-8e55-4753d7d12155.png)
+
+Our Angular app enabled users to leave a book anywhere in London, register it on its site and track its progress from the comments of other people who found it. It was a way to build a narrative around the object of the book itself. We decided to make Free The Books a mock activist movement whose aim was to free books from the tyranny of shelves. We styled the app after Communist propaganda posters and I wrote us a manifesto that drew inspiration from the tenets of Fight Club.
+
+![screen shot 2017-03-04 at 18 35 21](https://cloud.githubusercontent.com/assets/20258758/23581402/c3d82054-010a-11e7-9a34-b8372c962c88.png)
+
+I was responsible for several aspects of this project, namely 'I found a book' page (showed above), where you enter book's code which redirects you to a book show page, allowing you to comment on the book. You can only add comment about a book if you came from this page.
+
+Another aspect I was responsible for was a unique code rendering, which is only showed to you if you release a book, making it yours. No other user can't see the code besides you.
+
+I also teamed up with one of my classmates to set up the back end. We were responsible for Express app and all the packages, we also set up the database and initial models.
+
+![screen shot 2017-03-04 at 18 37 16](https://cloud.githubusercontent.com/assets/20258758/23581403/c3eb0872-010a-11e7-95a1-1946ec39f81b.png)
+
+The book index was a group effort, we used a Angular Slick carousel for Freedom Feed and we render all books ever released under it.
+
+![screen shot 2017-03-04 at 18 36 06](https://cloud.githubusercontent.com/assets/20258758/23581401/c3d78914-010a-11e7-8c6d-e108f1404d80.png)
+
+![screen shot 2017-03-04 at 18 44 09](https://cloud.githubusercontent.com/assets/20258758/23581405/c3f81508-010a-11e7-946d-45ce7db2f95f.png)
+
+## What was a challenge?
+
+Teamwork and coordination proved to be a biggest challenge duing this project. It was a first time any of us worked in a development team, we used Trello for work coordination and git for version control just as we were advised.
+
+## What was a win?
+We ended with a functional website, it was a first time we used AngularJS in a project, only after a week of studying Angular in a class.
+
+## What I want to implement in the future
+We discussed making the site live. We thought a printable code for users to stick on the book would be a nice touch.
 
 
-![Alt Image Text](docs/trello_screenshot_20170201.png)
-
-
-
-
-
-![Alt Image Text](docs/balsamiq-wireframe.png)
-
-##Production
-
-On Tuesday we spent some time working on a bug related to installing angular Slick carousel. We understood that the issue was installing an outdated version of Slick which didn’t match our current setup. 
-
-http://kenwheeler.github.io/slick/ 
-
-
-
-
+## Known issues
+- If logged out the book show page is broken
